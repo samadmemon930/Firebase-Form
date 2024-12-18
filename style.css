@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f4f4f9;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 20px 20px rgba(0, 132, 255, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+.form-container h2 {
+    margin-left: 110px;
+    margin-right: 110px;
+    color: #fc0000;
+}
+
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ff0000;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* Responsive Styles */
+
+/* For mobile devices (screens up to 600px wide) */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;  /* Reduced padding for smaller screens */
+    }
+
+    .form-container h2 {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 22px; /* Adjust heading size for mobile */
+    }
+
+    form {
+        width: 90%; /* Form width should take 90% of the screen */
+    }
+
+    input {
+        font-size: 14px; /* Adjust input font size for mobile */
+        padding: 8px; /* Reduce padding for mobile */
+    }
+
+    button {
+        font-size: 18px; /* Smaller button text */
+        padding: 10px; /* Reduce button padding */
+    }
+
+    p {
+        font-size: 18px; /* Smaller paragraph text */
+    }
+}
+
+/* For tablets (screens between 601px and 1024px wide) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .form-container h2 {
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 26px; /* Adjust heading size for tablets */
+    }
+
+    form {
+        width: 80%; /* Form width should take 80% of the screen */
+    }
+
+    input {
+        font-size: 15px; /* Adjust input font size */
+        padding: 10px; /* Adjust padding */
+    }
+
+    button {
+        font-size: 18px; /* Smaller button text */
+        padding: 12px; /* Adjust button padding */
+    }
+
+    p {
+        font-size: 18px; /* Adjust paragraph size */
+    }
+}
+
+/* For larger screens (desktop or laptops, width over 1024px) */
+@media (min-width: 1025px) {
+    .form-container h2 {
+        margin-left: 110px;
+        margin-right: 110px;
+        font-size: 30px; /* Larger heading size for desktops */
+    }
+
+    form {
+        width: 400px; /* Fixed form width for desktop */
+    }
+
+    input {
+        font-size: 16px; /* Standard input font size */
+        padding: 10px; /* Standard input padding */
+    }
+
+    button {
+        font-size: 20px; /* Standard button text */
+        padding: 12px; /* Standard button padding */
+    }
+
+    p {
+        font-size: 20px; /* Standard paragraph size */
+    }
+}
