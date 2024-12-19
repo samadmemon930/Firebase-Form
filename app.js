@@ -59,8 +59,8 @@ submit.addEventListener("click", (e) => {
         return;
     }
 
-    const CLOUDNAME = "docmzargc";
-    const UPLOAD_PRESET = "Raheel";
+    const CLOUDNAME = "dvk95rpaq";
+    const UPLOAD_PRESET = "o3oaiwyp";
     const URL = `https://api.cloudinary.com/v1_1/${CLOUDNAME}/upload`;
     const formData = new FormData();
     formData.append("upload_preset", UPLOAD_PRESET);
